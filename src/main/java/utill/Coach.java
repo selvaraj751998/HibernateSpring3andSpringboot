@@ -1,4 +1,4 @@
-package com.springboot.demo.mycoolapp.rest;
+package utill;
 
 public interface Coach {
 

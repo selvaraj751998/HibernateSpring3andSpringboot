@@ -1,4 +1,4 @@
-package com.springboot.demo.mycoolapp.rest;
+package utill;
 
 import org.springframework.stereotype.Component;
 
