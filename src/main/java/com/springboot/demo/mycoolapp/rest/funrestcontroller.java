@@ -1,6 +1,7 @@
 package com.springboot.demo.mycoolapp.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import utill.Coach;
@@ -10,7 +11,7 @@ public class funrestcontroller {
 
     private Coach mycoach;
     @Autowired
-    public void setCoach(Coach thecoach){
+    public funrestcontroller(@Qualifier("cricketcoach") Coach thecoach){
         mycoach = thecoach;
     }
     @GetMapping("/")
