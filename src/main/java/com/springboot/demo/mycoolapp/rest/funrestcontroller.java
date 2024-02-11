@@ -12,6 +12,7 @@ public class funrestcontroller {
     private Coach mycoach;
     @Autowired
     public funrestcontroller(@Qualifier("cricketcoach") Coach thecoach){
+        System.out.println("In constructor : "+getClass().getSimpleName());
         mycoach = thecoach;
     }
     @GetMapping("/")
